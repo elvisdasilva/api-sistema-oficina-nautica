@@ -1,3 +1,9 @@
 from django.shortcuts import render
+from rest_framework import generics
+from apps.brands.models import Brand
+from apps.brands.serializers import BrandSerializer
 
-# Create your views here.
+
+class BrandListCreateView(generics.ListCreateAPIView):
+    queryset = Brand.objects.all()
+    serializer_class = BrandSerializer
