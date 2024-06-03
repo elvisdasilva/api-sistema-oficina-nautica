@@ -1,6 +1,6 @@
 from rest_framework import generics
-from apps.brands.models import Brand
-from apps.brands.serializers import BrandSerializer
+from apps.brand.models import Brand
+from apps.brand.serializers import BrandSerializer
 
 
 class BrandListCreateView(generics.ListCreateAPIView):

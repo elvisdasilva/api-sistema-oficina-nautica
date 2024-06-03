@@ -1,10 +1,10 @@
 from rest_framework import serializers
-from apps.brands.models import Brand
+from apps.model.models import Model
 
 
-class BrandSerializer(serializers.ModelSerializer):
+class ModelSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Brand
+        model = Model
         fields = "__all__"
 
     def validate_description(self, value):

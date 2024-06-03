@@ -1,6 +1,6 @@
 from rest_framework import generics
-from apps.models.models import Model
-from apps.models.serializers import ModelSerializer
+from apps.model.models import Model
+from apps.model.serializers import ModelSerializer
 
 
 class ModelListCreateView(generics.ListCreateAPIView):
