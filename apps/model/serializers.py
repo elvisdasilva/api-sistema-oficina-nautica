@@ -12,3 +12,4 @@ class ModelSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError(
                 "Description must not be longer than 50 characters"
             )
+        return value
