@@ -8,6 +8,6 @@ class EmployeeListCreateView(generics.ListCreateAPIView):
     serializer_class = EmployeeSerializer
 
 
-class EmployeeRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+class EmployeeRetrieveUpdateView(generics.RetrieveUpdateAPIView):
     queryset = Employee
     serializer_class = EmployeeSerializer

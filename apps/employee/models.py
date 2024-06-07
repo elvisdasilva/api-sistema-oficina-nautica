@@ -89,6 +89,7 @@ class Employee(models.Model):
         choices=REGISTRATION_TYPE_CHOICES, max_length=3
     )
     commission = models.FloatField()
+    active = models.BooleanField(default=True, blank=False)
 
     def __str__(self):
         return self.full_name

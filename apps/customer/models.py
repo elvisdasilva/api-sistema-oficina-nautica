@@ -78,6 +78,7 @@ class Customer(models.Model):
     registration_type = models.CharField(
         choices=REGISTRATION_TYPE_CHOICES, max_length=2
     )
+    active = models.BooleanField(default=True, blank=False)
 
     def __str__(self):
         return self.full_name
