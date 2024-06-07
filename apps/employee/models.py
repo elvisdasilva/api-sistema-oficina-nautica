@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Employees(models.Model):
+class Employee(models.Model):
     STATE_CHOICES = [
         ("AC", "Acre"),
         ("AL", "Alagoas"),
