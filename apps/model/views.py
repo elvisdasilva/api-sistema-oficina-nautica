@@ -8,6 +8,6 @@ class ModelListCreateView(generics.ListCreateAPIView):
     serializer_class = ModelSerializer
 
 
-class ModelRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+class ModelRetrieveUpdateView(generics.RetrieveUpdateAPIView):
     queryset = Model.objects.all()
     serializer_class = ModelSerializer
