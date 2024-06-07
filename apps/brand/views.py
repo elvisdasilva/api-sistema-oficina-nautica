@@ -8,6 +8,6 @@ class BrandListCreateView(generics.ListCreateAPIView):
     serializer_class = BrandSerializer
 
 
-class BrandRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
+class BrandRetrieveUpdateView(generics.RetrieveUpdateAPIView):
     queryset = Brand.objects.all()
     serializer_class = BrandSerializer
