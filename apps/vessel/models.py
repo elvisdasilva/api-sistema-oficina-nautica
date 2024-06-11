@@ -40,7 +40,7 @@ class Vessel(models.Model):
     color = models.CharField(max_length=50)
     photos = models.ImageField(upload_to="vessel_photos/", blank=True, null=True)
     registration_type = models.CharField(
-        choices=REGISTRATION_TYPE_CHOICES, max_length=7
+        choices=REGISTRATION_TYPE_CHOICES, max_length=8
     )
     general_observations = models.TextField(blank=True)
 
