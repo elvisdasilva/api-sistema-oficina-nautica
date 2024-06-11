@@ -4,10 +4,10 @@ from apps.employee.serializers import EmployeeSerializer
 
 
 class EmployeeListCreateView(generics.ListCreateAPIView):
-    queryset = Employee
+    queryset = Employee.objects.all()
     serializer_class = EmployeeSerializer
 
 
 class EmployeeRetrieveUpdateView(generics.RetrieveUpdateAPIView):
-    queryset = Employee
+    queryset = Employee.objects.all()
     serializer_class = EmployeeSerializer
