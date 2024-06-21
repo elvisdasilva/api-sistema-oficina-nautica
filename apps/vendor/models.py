@@ -60,7 +60,7 @@ class Vendor(models.Model):
     phone_number = models.CharField(max_length=20)
     whatsapp = models.CharField(max_length=20, blank=True)
     email = models.EmailField(max_length=100, blank=True)
-    contato = models.CharField(max_length=100)
+    contact = models.CharField(max_length=100)
     date_of_birth = models.DateField(blank=True)
     cpf = models.CharField(max_length=14, unique=True, null=True)
     cnpj = models.CharField(max_length=18, unique=True, null=True)
